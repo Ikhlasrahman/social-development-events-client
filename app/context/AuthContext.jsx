@@ -14,14 +14,24 @@ export function AuthProvider({ children }) {
 
   // Restore user session on mount/reload
   useEffect(() => {
+  const initializeAuth = () => {
     const storedUser = localStorage.getItem('social_events_user');
     const storedToken = localStorage.getItem('social_events_token');
 
     if (storedUser && storedToken) {
-      setUser(JSON.parse(storedUser));
+      try {
+        const parsedUser = JSON.parse(storedUser);
+        setUser(parsedUser);
+      } catch (err) {
+        console.error('Failed to parse stored user:', err);
+      }
     }
     setLoading(false);
-  }, []);
+  };
+
+  const timer = setTimeout(initializeAuth, 0);
+  return () => clearTimeout(timer);
+}, []);
 
   // Request & save JWT token
   const requestToken = async (email) => {
