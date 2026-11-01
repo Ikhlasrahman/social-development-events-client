@@ -1,3 +1,21 @@
+ImpactServe is a community-driven event management web application where citizens create, discover, and join grassroot social service initiatives such as winter clothing drives, park cleanups, food donations, and tree plantation projects.
+
+## Live Website
+- **Live Client Application:** [Coming Soon via Vercel Deployment]
+- **Live Backend Server API:** [Coming Soon via Vercel Deployment]
+
+## Core Features
+1. **Interactive Event Discovery & Filtering:** Browse upcoming social initiatives in your locality with dynamic sorting and zero past-event listings.
+2. **Community Initiative Creation:** Logged-in organizers can create and publish events with future date validation, category tags, and descriptive guidelines.
+3. **Dedicated Event Management Dashboard:** Event creators can update details or delete their published initiatives while preventing unauthorized modifications.
+4. **Volunteer Participation & Tracking:** Users can RSVP to events with a single click and review their complete participation history on a sorted dashboard.
+5. **Theme Customization & Responsive Experience:** Full dark/light mode toggle with persistent state and responsive design across desktop, tablet, and mobile displays.
+
+## Tech Stack
+- **Frontend:** Next.js (App Router), Tailwind CSS, Lucide Icons, React Hot Toast
+- **Backend:** Node.js, Express.js, MongoDB Atlas, JSON Web Token (JWT)
+- **Deployment:** Vercel
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
