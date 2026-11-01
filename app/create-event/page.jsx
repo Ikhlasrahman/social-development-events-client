@@ -2,8 +2,8 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { useAuth } from '@/app/context/AuthContext';
-import PrivateRoute from '@/components/PrivateRoute';
+import { useAuth } from '../context/AuthContext';
+import PrivateRoute from '../../components/PrivateRoute';
 import axios from 'axios';
 import toast from 'react-hot-toast';
 import { Calendar, MapPin, Tag, Image as ImageIcon, FileText, Send } from 'lucide-react';

@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { useAuth } from '@/app/context/AuthContext';
+import { useAuth } from '../app/context/AuthContext';
 
 export default function PrivateRoute({ children }) {
   const { user, loading } = useAuth();

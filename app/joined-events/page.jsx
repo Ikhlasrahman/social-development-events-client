@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { useAuth } from '@/app/context/AuthContext';
-import PrivateRoute from '@/components/PrivateRoute';
+import { useAuth } from '../context/AuthContext';
+import PrivateRoute from '../../components/PrivateRoute';
 import axios from 'axios';
 import { Calendar, MapPin, Tag, CheckCircle2, ArrowRight } from 'lucide-react';
 

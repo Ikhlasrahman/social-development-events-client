@@ -3,8 +3,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useTheme } from "next-themes";
-import { useAuth } from "@/app/context/AuthContext";
+import { useTheme } from '../app/providers/ThemeProvider';
+import { useAuth } from '../app/context/AuthContext';
 import {
   Sun,
   Moon,

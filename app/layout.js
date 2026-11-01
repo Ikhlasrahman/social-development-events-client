@@ -2,8 +2,9 @@ import './globals.css';
 import ThemeProvider from './providers/ThemeProvider';
 import { AuthProvider } from './context/AuthContext';
 import { Toaster } from 'react-hot-toast';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+
 
 export const metadata = {
   title: 'ImpactServe - Social Development Events Platform',
@@ -22,7 +23,7 @@ export default function RootLayout({ children }) {
             <Toaster position="top-right" />
             <Navbar />
             <main className="flex-1">{children}</main>
-            <Footer />
+           <Footer />
           </AuthProvider>
         </ThemeProvider>
       </body>
