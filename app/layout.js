@@ -1,3 +1,4 @@
+import { AuthProvider } from './context/AuthContext';
 import './globals.css';
 import ThemeProvider from './providers/ThemeProvider';
 import { Toaster } from 'react-hot-toast';
@@ -15,8 +16,10 @@ export default function RootLayout({ children }) {
         className="min-h-screen bg-white text-gray-900 dark:bg-neutral-950 dark:text-gray-100 antialiased"
       >
         <ThemeProvider>
-          <Toaster position="top-right" />
-          {children}
+          <AuthProvider>
+            <Toaster position="top-right" />
+            {children}
+          </AuthProvider>
         </ThemeProvider>
       </body>
     </html>
